@@ -1,0 +1,5 @@
+# $Id: testfile.dr,v 1.1 2015-02-06 16:33:06-08 - - $
+define first ellipse 5 7 8
+draw first 4 4 10
+define second ellipse 4 8 
+draw second 4 7 0
