@@ -1,0 +1,41 @@
+This program was completed using pair programming.
+Partner:  Robert Ho               (rokho@ucsc.edu)
+Partner:  Daniel Urrutia          (deurruti@ucsc.edu)
+
+We acknowledge that each partner in a programming pair should
+drive roughly 50% of the time the pair is working together, and
+at most 25% of an individual's effort for an assignment should
+be spent working alone.  Any work done by a solitary programmer
+must be reviewed by the partner.  The object is to work
+together, learning from each other, not to divide the work into
+two pieces with each partner working on a different piece.
+
+Robert Ho     spent       3 hours working alone.
+Daniel Urrutia spent      5 hours working alone.
+We spent                 36 hours working together.
+Robert Ho spent          18 hours driving.
+Daniel Urrutia spent     18 hours driving.
+
+Please grade the work submitted by rokho@ucsc.edu
+and not the work submitted by deurruti@ucsc.edu.
+
+files submitted:
+debug.cpp
+debug.h
+graphics.cpp
+graphics.h
+interp.cpp
+interp.h
+Makefile
+main.cpp
+mk-colors.perl
+PARTNER
+README
+rgbcolor.h
+rgbcolor.cpp
+shape.cpp
+shape.h
+util.cpp
+util.h
+util.tcc
+$Id: README,v 1.1 2015-02-12 11:22:36-08 - - $ 

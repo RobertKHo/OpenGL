@@ -1,0 +1,37 @@
+g++ -g -O0 -Wall -Wextra -std=gnu++11 -c debug.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++11 -c graphics.cpp
+graphics.cpp: In static member function ‘static void window::display()’:
+graphics.cpp:54:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if(objNum != window::objects.size()){
+                                       ^
+graphics.cpp: In static member function ‘static void window::select_object(int)’:
+graphics.cpp:144:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i = 0; i < window::objects.size();++i){
+                                            ^
+graphics.cpp:162:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if(key > window::objects.size()-1){
+                                         ^
+g++ -g -O0 -Wall -Wextra -std=gnu++11 -c interp.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++11 -c shape.cpp
+shape.cpp:131:6: warning: unused parameter ‘center’ [-Wunused-parameter]
+ void text::draw_label(const vertex& center, int obj_num) const{
+      ^
+shape.cpp:131:6: warning: unused parameter ‘obj_num’ [-Wunused-parameter]
+shape.cpp:137:6: warning: unused parameter ‘border’ [-Wunused-parameter]
+ void text::draw (const vertex& center, const rgbcolor& color, 
+      ^
+shape.cpp:150:6: warning: unused parameter ‘center’ [-Wunused-parameter]
+ void text::draw_border(const vertex& center, int thickness,
+      ^
+shape.cpp:150:6: warning: unused parameter ‘thickness’ [-Wunused-parameter]
+shape.cpp:150:6: warning: unused parameter ‘color’ [-Wunused-parameter]
+shape.cpp:194:6: warning: unused parameter ‘border’ [-Wunused-parameter]
+ void ellipse::draw (const vertex& center, const rgbcolor& color,
+      ^
+shape.cpp:235:6: warning: unused parameter ‘border’ [-Wunused-parameter]
+ void polygon::draw (const vertex& center, const rgbcolor& color,
+      ^
+g++ -g -O0 -Wall -Wextra -std=gnu++11 -c util.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++11 -c main.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++11 -o gdraw debug.o graphics.o interp.o rgbcolor.o shape.o util.o main.o -lGL -lGLU -lglut -lm
+checksource debug.h graphics.h interp.h rgbcolor.h shape.h util.h util.tcc debug.cpp graphics.cpp interp.cpp rgbcolor.cpp shape.cpp util.cpp main.cpp Makefile README PARTNER mk-colors.perl
